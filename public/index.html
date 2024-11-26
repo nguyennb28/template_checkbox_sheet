@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
     <div class="container">
-        <div>
-            <h2>Select month</h2>
-            <select></select>
-        </div>
-        <div>
-            <h2>Select year</h2>
-            <select></select>
-        </div>
-        <table>
-            <tr>
-                <th></th>
-            </tr>
-            <tr></tr>
-        </table>
+      <div>
+        <h2>Select month</h2>
+        <select id="list-month"></select>
+      </div>
+      <div>
+        <h2>Select year</h2>
+        <input type="text" id="input-year" />
+      </div>
+      <table id="table-date-month-year">
+        <thead>
+          <tr class="list-date-month-year"></tr>
+        </thead>
+        <tbody>
+          <tr class="list-checkbox"></tr>
+        </tbody>
+      </table>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

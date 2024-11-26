@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#table-date-month-year {
+    border: 1px solid #000;
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: scroll;
+}
+#table-date-month-year th, #table-date-month-year td {
+    padding: 8px;
+    text-align: left;
+}
+#table-date-month-year thead {
+    background-color: #f2f2f2;
+}
+#table-date-month-year tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+#table-date-month-year tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+td {
+    border: 1px solid #000;
+}
+/* table {
+  border: 1px solid #000;
+} */
