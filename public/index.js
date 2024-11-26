@@ -59,6 +59,20 @@ function listDateMonthYear(days) {
       day: "numeric",
     })}
     </td>`;
-    listCheckbox.innerHTML += `<td><input type="checkbox" name="date" value="${index}-${selectMonth.value}-${inputYear.value}" /></td>`;
+    listCheckbox.innerHTML += `<td><input type="checkbox" class="input-checkbox" name="date" value="${index}-${selectMonth.value}-${inputYear.value}" /></td>`;
   }
+}
+
+const inputCheckbox = document.querySelectorAll(".input-checkbox");
+const listTotal = document.querySelector(".list-total");
+let total = 0;
+for (let event of inputCheckbox) {
+  event.addEventListener("change", function (e) {
+    if (e.target.checked) {
+      total += 1;
+    } else {
+      total -= 1;
+    }
+    listTotal.textContent = total;
+  });
 }
