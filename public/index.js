@@ -28,7 +28,6 @@ inputYear.addEventListener("keyup", function (e) {
     listDateMonthYear(days);
     // change title year
     const titleYear = document.querySelector(".title-year");
-    titleYear.textContent = e.target.value;
   }
 });
 

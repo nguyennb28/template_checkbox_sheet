@@ -22,8 +22,10 @@
 #table-date-month-year tbody tr:nth-child(odd) {
     background-color: #fff;
 }
-td {
+#table-date-month-year td {
     border: 1px solid #000;
+    text-wrap: nowrap;
+    text-align: center;
 }
 /* table {
   border: 1px solid #000;
